@@ -3,6 +3,7 @@
   "displayName": "devlog-diff-helper",
   "description": "Copy today's Git diff to clipboard for DevLog with CodeX",
   "version": "0.0.1",
+  "publisher": "angelcomilk",
   "engines": {
     "vscode": "^1.106.1"
   },

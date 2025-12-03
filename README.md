@@ -63,15 +63,30 @@
 
 # 📦 安装与使用
 
-### 1. 打开 VS Code  
-### 2. 安装扩展（或从 VSIX 安装）
-### 3. 打开任意 Git 项目  
-### 4. 点击右下角按钮：
-```
-$(git-commit) Copy Diff
-```
+### 方式 A：通过 VSIX 本地安装（当前推荐）
 
-你的今日 diff 会被复制到剪贴板，可直接粘贴给 AI。
+1. 从本项目的 Release 页面或其他来源获取 `.vsix` 文件，例如：
+   - `devlog-diff-helper-0.0.1.vsix`
+2. 打开 VS Code。
+3. 打开扩展视图：
+   - 左侧边栏点击 **Extensions（扩展）** 图标，或使用快捷键 `Ctrl+Shift+X`（Windows/Linux） / `Cmd+Shift+X`（macOS）。
+4. 在扩展视图右上角点击 `···` 菜单，选择 **“Install from VSIX...” / “从 VSIX 安装...”**。
+5. 选择刚刚下载的 `.vsix` 文件，确认安装。
+6. 安装完成后，按提示 **Reload / 重新加载** VS Code（如果有），或手动重启 VS Code。
+
+### 安装后如何使用
+
+1. 在 VS Code 中打开一个包含 Git 仓库的文件夹（你的项目根目录）。  
+2. 等待 VS Code 识别仓库后，右下角会出现状态栏按钮：
+   
+   ```
+   $(git-commit) Copy Diff
+   ```
+3. 完成一天的编码后，点击该按钮，扩展会：
+   - 检测今日修改过且有未提交改动的文件；
+   - 生成按文件分组的 diff；
+   - 将结果自动复制到剪贴板。
+4. 打开你常用的 AI 工具（如 Codex / GPT），直接粘贴剪贴板中的内容，让 AI 生成 DevLog / 总结 / 长期记忆输入。
 
 ---
 
